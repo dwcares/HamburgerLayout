@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="6dc855e1-24aa-455d-8ad8-d931d5e52e12" Version="1.0.0.0" Publisher="CN=washi_000" />
+  <Properties>
+    <DisplayName>HamburgerLayout</DisplayName>
+    <PublisherDisplayName>washi_000</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Hamburger Layout" Description="Hamburger Layout" ForegroundText="light" BackgroundColor="#B53D3B" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:DefaultTile ShortName="Hamburger Layout" Square310x310Logo="images/largelogo.png" Wide310x150Logo="images/widelogo.png" Square70x70Logo="images\SmalltileLogo.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#B53D3B" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,92 @@
+﻿.body {
+}
+
+.viewport {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-x: snapList(0%, 300px, calc(300px + 300px));
+    -ms-overflow-style: none;
+}
+
+.surface {
+    width: calc(300px + 100% + 300px);
+    height: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 300px 1fr 300px;
+    -ms-grid-rows: 1fr;
+}
+
+.menu-left {
+    -ms-grid-column: 1;
+}
+
+.content {
+    -ms-grid-column: 2;
+    background-color: #f7f8f3;
+}
+
+.menu-right {
+    -ms-grid-column: 3;
+}
+
+.content .header {
+    background-color: #B53D3B;
+    -ms-grid-row: 1;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr;
+}
+
+    .content .header .hamburger {
+        -ms-grid-row-align: end;
+        width: 80px;
+        height: 100%;
+        opacity: 0.5;
+        background-image: url(/images/ham.svg);
+        background-position: center center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+    }
+
+    .content .header .hamburger:hover {
+        background-color: #375569;
+    }
+
+    .content .header h1 {
+        -ms-grid-column-align: center;
+        -ms-grid-row-align: end;
+        margin-bottom: 10px;
+        font-family: 'Segoe UI Light', 'Segoe WP SemiBold';
+        font-weight: 100;
+        font-size: 36pt;
+        opacity: 0.5;
+    }
+
+.content .text {
+    -ms-grid-row: 2;
+    color: darkgrey;
+
+}
+
+.menu-left {
+    -ms-grid-column: 1;
+    box-shadow: inset -5px 0 10px -2px rgba(0, 0, 0, 0.6);
+    background-color: #375569;
+}
+
+.menu-right {
+    -ms-grid-column: 3;
+    box-shadow: inset 5px 0 10px -2px rgba(0, 0, 0, 0.6);
+    background-color: #3D3D3D;
+}
+
+.menu {
+    font-family: 'Segoe UI Light', 'Segoe WP SemiLight';
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+}
+
+  
